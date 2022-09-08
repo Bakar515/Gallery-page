@@ -7,17 +7,25 @@
     <title>Gallery page</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="GALLERY-PAGE/js/bootstrap.bundle.js" async ></script>
+    <script src="GALLERY-PAGE/js/bootstrap.bundle.js" async >
+            src="jquery-3.6.1.js"
+            function div1(){
+                $('#all').show();
+            }
+            function div2(){
+                $('#camera').hide();
+            }
+    </script>
 </head>
 <body>
     <div class="p-3 mb-2 bg-dark text-white">
         <div>
-            <button class="btn btn-dark">All</button>
-            <button class="btn btn-dark">Camera</button>
-            <button class="btn btn-dark">Phone</button>
-            <button class="btn btn-dark">Shoe</button>
-            <button class="btn btn-dark">Headphone</button>
-            <button class="btn btn-dark">Watch</button>
+            <button onclick="div1()" class="btn btn-dark">All</button>
+            <button onclick="div2()" class="btn btn-dark">Camera</button>
+            <button onclick="" class="btn btn-dark">Phone</button>
+            <button onclick="" class="btn btn-dark">Shoe</button>
+            <button onclick="" class="btn btn-dark">Headphone</button>
+            <button onclick="" class="btn btn-dark">Watch</button>
         </div>
         <div class="images" id="all">
             <img class="img-thumbnail" id=img1"" src="images/camera.jpg" />
@@ -41,7 +49,7 @@
             <img class="img-thumbnail" id="img1" src="images/camera.jpg" />
             <img class="img-thumbnail" id="img1" src="images/camera.jpg" />
         </div>
-         <div class="images">
+         <div class="images" id="headphone">
             <img class="img-thumbnail" id="img9" src="images/headphone.jpg" />
             <img class="img-thumbnail" id="img9" src="images/headphone.jpg" />
             <img class="img-thumbnail" id="img9" src="images/headphone.jpg" />
@@ -86,6 +94,5 @@
             <img class="img-thumbnail" id="img9" src="images/watch.jpg" />
         </div>
     </div>
-    <script src="galleryPage.js"></script>
 </body>
 </html>
