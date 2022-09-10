@@ -63,3 +63,18 @@
     margin-bottom: 10px;
     border:groove;
 }
+#camera {
+    display: none;
+}
+#headphone {
+    display: none;
+}
+#phone {
+    display: none;
+}
+#watch {
+    display: none;
+}
+#shoe {
+    display: none;
+}
