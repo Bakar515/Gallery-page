@@ -7,25 +7,82 @@
     <title>Gallery page</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="GALLERY-PAGE/js/bootstrap.bundle.js" async >
-            src="jquery-3.6.1.js"
-            function div1(){
-                $('#all').show();
-            }
-            function div2(){
-                $('#camera').hide();
-            }
+    <!-- <script src="GALLERY-PAGE/jquery.js"></script> -->
+    <!-- <script src="GALLERY-PAGE/js/bootstrap.bundle.js" async ></script> -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function() {
+    $("#div1show").click(function() {
+        $("#camera").css("display","none");
+        $("#headphone").css("display","none");
+        $("#phone").css("display","none");
+        $("#watch").css("display","none");
+        $("#shoe").css("display","none");
+        $("#all").css("display","block");
+    });
+});
+$(document).ready(function() {
+    $("#div2show").click(function() {
+        $("#all").css("display","none");
+        $("#headphone").css("display","none");
+        $("#phone").css("display","none");
+        $("#shoe").css("display","none");
+        $("#watch").css("display","none");
+        $("#camera").css("display","block");
+    });
+});
+$(document).ready(function() {
+    $("#div3show").click(function() {
+        $("#all").css("display","none");
+        $("#camera").css("display","none");
+        $("#phone").css("display","none");
+        $("#shoe").css("display","none");
+        $("#watch").css("display","none");
+        $("#headphone").css("display","block");
+    });
+});
+$(document).ready(function() {
+    $("#div4show").click(function() {
+        $("#all").css("display","none");
+        $("#camera").css("display","none");
+        $("#headphone").css("display","none");
+        $("#shoe").css("display","none");
+        $("#watch").css("display","none");
+        $("#phone").css("display","block");
+    });
+});
+$(document).ready(function() {
+    $("#div5show").click(function() {
+        $("#all").css("display","none");
+        $("#camera").css("display","none");
+        $("#phone").css("display","none");
+        $("#headphone").css("display","none");
+        $("#watch").css("display","none");
+        $("#shoe").css("display","block");
+    });
+});
+$(document).ready(function() {
+    $("#div6show").click(function() {
+        $("#all").css("display","none");
+        $("#camera").css("display","none");
+        $("#phone").css("display","none");
+        $("#shoe").css("display","none");
+        $("#headphone").css("display","none");
+        $("#watch").css("display","block");
+    });
+});
     </script>
 </head>
 <body>
     <div class="p-3 mb-2 bg-dark text-white">
         <div>
-            <button onclick="div1()" class="btn btn-dark">All</button>
-            <button onclick="div2()" class="btn btn-dark">Camera</button>
-            <button onclick="" class="btn btn-dark">Phone</button>
-            <button onclick="" class="btn btn-dark">Shoe</button>
-            <button onclick="" class="btn btn-dark">Headphone</button>
-            <button onclick="" class="btn btn-dark">Watch</button>
+            <button id="div1show" class="btn btn-dark">All</button>
+            <button id="div2show" class="btn btn-dark">Camera</button>
+            <button id="div3show" class="btn btn-dark">HeadPhone</button>
+            <button id="div4show" class="btn btn-dark">Phone</button>
+            <button id="div5show" class="btn btn-dark">Shoe</button>
+            <button id="div6show" class="btn btn-dark">Watch</button>
         </div>
         <div class="images" id="all">
             <img class="img-thumbnail" id=img1"" src="images/camera.jpg" />
